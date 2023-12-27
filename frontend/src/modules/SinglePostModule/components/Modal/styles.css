@@ -1,0 +1,49 @@
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1400;
+}
+
+.modal {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.content {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  overflow: auto;
+  overscroll-behavior-y: none;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  z-index: 1400;
+}
+
+.content-section {
+  background-color: #fff;
+}

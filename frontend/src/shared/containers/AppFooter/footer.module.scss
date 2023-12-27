@@ -1,0 +1,32 @@
+.linksWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 96px);
+  justify-content: space-between;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "leftTop center rightTop"
+    "leftBottom . rightBottom";
+  row-gap: 8px;
+
+  > .social-link-0 {
+    grid-area: leftTop;
+    justify-self: flex-start;
+  }
+
+  > .social-link-1 {
+    grid-area: leftBottom;
+    justify-self: flex-start;
+  }
+  > .social-link-2 {
+    grid-area: center;
+    justify-self: center;
+  }
+  > .social-link-3 {
+    grid-area: rightTop;
+    justify-self: flex-end;
+  }
+  > .social-link-4 {
+    grid-area: rightBottom;
+    justify-self: flex-end;
+  }
+}

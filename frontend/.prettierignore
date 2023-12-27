@@ -1,0 +1,9 @@
+# Ignore artifacts:
+.next
+node_modules
+public
+tsconfig.json
+tsconfig.node.json
+.eslintrc.cjs
+.eslintrules.cjs
+.eslintprod.cjs
